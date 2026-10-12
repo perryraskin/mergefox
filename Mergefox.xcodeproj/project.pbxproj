@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05EC7BB638C41316A9417CCE /* marked.js in Resources */ = {isa = PBXBuildFile; fileRef = 67C2F0652DFE8921F996EA96 /* marked.js */; };
+		0FD36B36D17D625852877E58 /* mermaid.js in Resources */ = {isa = PBXBuildFile; fileRef = 33CC9BA14E26F3C5FBC06F09 /* mermaid.js */; };
+		1E94F57E2C86D65671F49953 /* RecentlyMergedFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584D643FDEEFD57741CD1CD /* RecentlyMergedFeed.swift */; };
+		1F66FF463B8F98396CD7A79E /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EF0CC06241CED77ABA204E /* Keychain.swift */; };
+		2403C8E743E4E4BBA28FCB6B /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC8B5D4E53F451A8498049A /* Components.swift */; };
+		25294A3A0BF8A8A6E77B1F47 /* MergefoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D65DB508BEDCC7208B36C /* MergefoxApp.swift */; };
+		28A39CE07953F09E41E368E6 /* dompurify.js in Resources */ = {isa = PBXBuildFile; fileRef = AC75B62CD857E081FA88C797 /* dompurify.js */; };
+		30C09EE3190A716E3887C363 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC8B5D4E53F451A8498049A /* Components.swift */; };
+		34A8BAB22F8D347C7C7F8C6E /* SharedMRLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67D968A37239E43B6F80BC3 /* SharedMRLink.swift */; };
+		3724807542F6D40B51D9B031 /* HomePageControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1573D8713A5673805D94089C /* HomePageControls.swift */; };
+		3B6C15338001C92AD8F8CBCA /* ThirdPartyNotices.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF3C7A61FBCDDDE412E32541 /* ThirdPartyNotices.txt */; };
+		41BCE84619B649A2592256F4 /* GitLabAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA92C577C297B7A675EEFB2 /* GitLabAPI.swift */; };
+		421884D6E058C566A569C4FD /* mermaid.js in Resources */ = {isa = PBXBuildFile; fileRef = 33CC9BA14E26F3C5FBC06F09 /* mermaid.js */; };
+		42C8B37A75FD138308BFFB76 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0D0446C46B7C192854149 /* Views.swift */; };
+		51CB0EF745A52A36FE8722F9 /* dompurify.js in Resources */ = {isa = PBXBuildFile; fileRef = AC75B62CD857E081FA88C797 /* dompurify.js */; };
+		542EB88345A0B10F1FE65F2D /* ReleaseMetricsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CCAE38D6D811DAE7BA8934 /* ReleaseMetricsTests.swift */; };
+		5C79232E2DD66281C645A10E /* MergefoxShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6E12AB59CACCB355C120E0B9 /* MergefoxShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5CBED9F585437E0D14147496 /* ReleaseDashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA4D0861DDF9B7FA6A90500 /* ReleaseDashboardModel.swift */; };
+		600E390C8488C8ED6EE93505 /* ReleaseDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DDD6B2B12B55B81D2469E3 /* ReleaseDashboardView.swift */; };
+		649086599E9FBF168C470246 /* RecentlyMergedFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584D643FDEEFD57741CD1CD /* RecentlyMergedFeed.swift */; };
+		716C40B12BE377C87EA92821 /* HomePageControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1573D8713A5673805D94089C /* HomePageControls.swift */; };
+		72167A8C5FBE24766363A8A9 /* EdgeDiffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5923AF5ED71B8CB2D941CF6 /* EdgeDiffView.swift */; };
+		76D5700202BFFE0AD62C1F88 /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6479169BB92D2E4A197A7C08 /* OAuth.swift */; };
+		78A58309A8E928E9289EA782 /* gitdiff in Frameworks */ = {isa = PBXBuildFile; productRef = 4E39824D305FC8CF6352D5D7 /* gitdiff */; };
+		7921122C02E3BB4C2A0137EA /* EdgeDiffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5923AF5ED71B8CB2D941CF6 /* EdgeDiffView.swift */; };
+		7B152E9B31FA88BA7213E7AC /* ReleaseMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6AAB86FE84F315683C93F7 /* ReleaseMetrics.swift */; };
+		80A8C72EBC8F58EB9C17012B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FF5ABAFC6CEC4E53E5CBFA /* Models.swift */; };
+		88F652D24C19FC3744F133EF /* InboxFiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8798FA09C5AE00DF7B1037B5 /* InboxFiltersView.swift */; };
+		8D88B96AC9B491F1814B5CE5 /* MergefoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF3EFA3391505E44A5398E6 /* MergefoxTests.swift */; };
+		8F89324A52D76ED5C95FEFFC /* MRInboxFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A65F35E823E722A9E1D7A /* MRInboxFilters.swift */; };
+		93BEEF6C7E38BF3C4BC279D8 /* GitLabAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA92C577C297B7A675EEFB2 /* GitLabAPI.swift */; };
+		961A08FD6CDD619F83AA3B0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7299C477F5E4757FDCEFB3C1 /* Assets.xcassets */; };
+		97DABC12E76B28E8ECE4BC6D /* marked.js in Resources */ = {isa = PBXBuildFile; fileRef = 67C2F0652DFE8921F996EA96 /* marked.js */; };
+		9D2ADB0A72CA2CD64FBEF0C1 /* gitdiff in Frameworks */ = {isa = PBXBuildFile; productRef = 9986A014F688820D5F110D40 /* gitdiff */; };
+		9E83F9C913DFA54B982798BF /* ThirdPartyNotices.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF3C7A61FBCDDDE412E32541 /* ThirdPartyNotices.txt */; };
+		9EAA86679BF04CECF72BE86B /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6479169BB92D2E4A197A7C08 /* OAuth.swift */; };
+		A89EB1732CFF28BB71C2F87C /* RichMarkdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CBE974D3E9637585AEA0F /* RichMarkdown.swift */; };
+		AEB2BFADA8721D665F99FA98 /* PajamasTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6752F81161DE08DA4674CA45 /* PajamasTheme.swift */; };
+		B139BAC03DD4CAF671BF4437 /* RichMarkdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CBE974D3E9637585AEA0F /* RichMarkdown.swift */; };
+		C50A70D5386727D7C5A2D6DF /* ReleaseDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DDD6B2B12B55B81D2469E3 /* ReleaseDashboardView.swift */; };
+		C691E27FFB016D903706773F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FF5ABAFC6CEC4E53E5CBFA /* Models.swift */; };
+		D375CB4B7B8AFF5AF0FA2A0A /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0D0446C46B7C192854149 /* Views.swift */; };
+		D78A915F0316C134E1797F49 /* SharedMRLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67D968A37239E43B6F80BC3 /* SharedMRLink.swift */; };
+		DCBC4E59BD0AA66D20866723 /* ReleaseDashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA4D0861DDF9B7FA6A90500 /* ReleaseDashboardModel.swift */; };
+		DD9C2621B827805B03D64DBA /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AFE719B199D40D06FA6245 /* AppModel.swift */; };
+		DF93A39DEAD960B1ACC6C1AA /* MRInboxFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A65F35E823E722A9E1D7A /* MRInboxFilters.swift */; };
+		E12ED9D574A89E747CE0D257 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8DE7B01F0BD6ECFB2100D0 /* ShareViewController.swift */; };
+		E775B78360B75B55FA2750AC /* PajamasTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6752F81161DE08DA4674CA45 /* PajamasTheme.swift */; };
+		E8B6B3575B5DAB8BDDC871AE /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EF0CC06241CED77ABA204E /* Keychain.swift */; };
+		EF208CFAD13F222CF39C6594 /* InboxFiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8798FA09C5AE00DF7B1037B5 /* InboxFiltersView.swift */; };
+		F37FCA2071F10B4A7FD6929B /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AFE719B199D40D06FA6245 /* AppModel.swift */; };
+		F8C3813A6A8B5A4DA8821771 /* ReleaseMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6AAB86FE84F315683C93F7 /* ReleaseMetrics.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD2A7F4BEB147E574C3716D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22573DC80B08735E23AB941D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 779EAA3804A148B9535FC8A6;
+			remoteInfo = MergefoxShare;
+		};
+		DF48CC3B92FDD7E1C734E963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22573DC80B08735E23AB941D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62932440D77919BEB1BD89A7;
+			remoteInfo = Mergefox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A3C2E9335229AC9647CD8C8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5C79232E2DD66281C645A10E /* MergefoxShare.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A8DE7B01F0BD6ECFB2100D0 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		0B3D65DB508BEDCC7208B36C /* MergefoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergefoxApp.swift; sourceTree = "<group>"; };
+		0EA4D0861DDF9B7FA6A90500 /* ReleaseDashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseDashboardModel.swift; sourceTree = "<group>"; };
+		10237C2331F0B70D67E3571F /* MergefoxTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MergefoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C914FCD401E5CC4F1CE60D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1573D8713A5673805D94089C /* HomePageControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageControls.swift; sourceTree = "<group>"; };
+		15CF4BA89FBA649261F3BD03 /* Mergefox.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Mergefox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E07D43D823630A9403D511 /* OAuth.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = OAuth.xcconfig; sourceTree = "<group>"; };
+		21CCAE38D6D811DAE7BA8934 /* ReleaseMetricsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseMetricsTests.swift; sourceTree = "<group>"; };
+		24EF0CC06241CED77ABA204E /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		33CC9BA14E26F3C5FBC06F09 /* mermaid.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = mermaid.js; sourceTree = "<group>"; };
+		4CF3EFA3391505E44A5398E6 /* MergefoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergefoxTests.swift; sourceTree = "<group>"; };
+		5BA92C577C297B7A675EEFB2 /* GitLabAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitLabAPI.swift; sourceTree = "<group>"; };
+		6479169BB92D2E4A197A7C08 /* OAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
+		6752F81161DE08DA4674CA45 /* PajamasTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PajamasTheme.swift; sourceTree = "<group>"; };
+		67C2F0652DFE8921F996EA96 /* marked.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = marked.js; sourceTree = "<group>"; };
+		691A65F35E823E722A9E1D7A /* MRInboxFilters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRInboxFilters.swift; sourceTree = "<group>"; };
+		6AC8B5D4E53F451A8498049A /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		6E12AB59CACCB355C120E0B9 /* MergefoxShare.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = MergefoxShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7299C477F5E4757FDCEFB3C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EB0D0446C46B7C192854149 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		8798FA09C5AE00DF7B1037B5 /* InboxFiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxFiltersView.swift; sourceTree = "<group>"; };
+		888CBE974D3E9637585AEA0F /* RichMarkdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichMarkdown.swift; sourceTree = "<group>"; };
+		A0FB8FF55C30CF44C81448D5 /* MergefoxShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MergefoxShare.entitlements; sourceTree = "<group>"; };
+		A5923AF5ED71B8CB2D941CF6 /* EdgeDiffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeDiffView.swift; sourceTree = "<group>"; };
+		A67D968A37239E43B6F80BC3 /* SharedMRLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedMRLink.swift; sourceTree = "<group>"; };
+		AC75B62CD857E081FA88C797 /* dompurify.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = dompurify.js; sourceTree = "<group>"; };
+		B3FF5ABAFC6CEC4E53E5CBFA /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		B9DDD6B2B12B55B81D2469E3 /* ReleaseDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseDashboardView.swift; sourceTree = "<group>"; };
+		C2776952933740063A59CE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DB6AAB86FE84F315683C93F7 /* ReleaseMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseMetrics.swift; sourceTree = "<group>"; };
+		E584D643FDEEFD57741CD1CD /* RecentlyMergedFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyMergedFeed.swift; sourceTree = "<group>"; };
+		EA05C38B2309CA084BD7E8E8 /* Mergefox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mergefox.entitlements; sourceTree = "<group>"; };
+		EF3C7A61FBCDDDE412E32541 /* ThirdPartyNotices.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ThirdPartyNotices.txt; sourceTree = "<group>"; };
+		F7AFE719B199D40D06FA6245 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76BBB046E6DCF53D68165980 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D2ADB0A72CA2CD64FBEF0C1 /* gitdiff in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC436078F8E763F2749A2B2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78A58309A8E928E9289EA782 /* gitdiff in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1003F533FE72B4E6B22E0AEB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A67D968A37239E43B6F80BC3 /* SharedMRLink.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2589E324A6670B4140B4F244 = {
+			isa = PBXGroup;
+			children = (
+				B5750BBB19E82FECEFC9E959 /* App */,
+				FD1AA72C23ED9F830440932D /* Config */,
+				1003F533FE72B4E6B22E0AEB /* Shared */,
+				2E8D14EB86D66D05A34DA8A1 /* ShareExtension */,
+				4B03645B268E68E94973D95B /* Tests */,
+				5A70D9A32C46C383858810C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E8D14EB86D66D05A34DA8A1 /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				14C914FCD401E5CC4F1CE60D /* Info.plist */,
+				A0FB8FF55C30CF44C81448D5 /* MergefoxShare.entitlements */,
+				0A8DE7B01F0BD6ECFB2100D0 /* ShareViewController.swift */,
+			);
+			path = ShareExtension;
+			sourceTree = "<group>";
+		};
+		4B03645B268E68E94973D95B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4CF3EFA3391505E44A5398E6 /* MergefoxTests.swift */,
+				21CCAE38D6D811DAE7BA8934 /* ReleaseMetricsTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		5A70D9A32C46C383858810C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15CF4BA89FBA649261F3BD03 /* Mergefox.app */,
+				6E12AB59CACCB355C120E0B9 /* MergefoxShare.appex */,
+				10237C2331F0B70D67E3571F /* MergefoxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F0D4F314273A4AECCA69DD0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC75B62CD857E081FA88C797 /* dompurify.js */,
+				67C2F0652DFE8921F996EA96 /* marked.js */,
+				33CC9BA14E26F3C5FBC06F09 /* mermaid.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B5750BBB19E82FECEFC9E959 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F7AFE719B199D40D06FA6245 /* AppModel.swift */,
+				7299C477F5E4757FDCEFB3C1 /* Assets.xcassets */,
+				6AC8B5D4E53F451A8498049A /* Components.swift */,
+				A5923AF5ED71B8CB2D941CF6 /* EdgeDiffView.swift */,
+				5BA92C577C297B7A675EEFB2 /* GitLabAPI.swift */,
+				1573D8713A5673805D94089C /* HomePageControls.swift */,
+				8798FA09C5AE00DF7B1037B5 /* InboxFiltersView.swift */,
+				C2776952933740063A59CE4C /* Info.plist */,
+				24EF0CC06241CED77ABA204E /* Keychain.swift */,
+				EA05C38B2309CA084BD7E8E8 /* Mergefox.entitlements */,
+				0B3D65DB508BEDCC7208B36C /* MergefoxApp.swift */,
+				B3FF5ABAFC6CEC4E53E5CBFA /* Models.swift */,
+				691A65F35E823E722A9E1D7A /* MRInboxFilters.swift */,
+				6479169BB92D2E4A197A7C08 /* OAuth.swift */,
+				6752F81161DE08DA4674CA45 /* PajamasTheme.swift */,
+				E584D643FDEEFD57741CD1CD /* RecentlyMergedFeed.swift */,
+				0EA4D0861DDF9B7FA6A90500 /* ReleaseDashboardModel.swift */,
+				B9DDD6B2B12B55B81D2469E3 /* ReleaseDashboardView.swift */,
+				DB6AAB86FE84F315683C93F7 /* ReleaseMetrics.swift */,
+				888CBE974D3E9637585AEA0F /* RichMarkdown.swift */,
+				EF3C7A61FBCDDDE412E32541 /* ThirdPartyNotices.txt */,
+				7EB0D0446C46B7C192854149 /* Views.swift */,
+				5F0D4F314273A4AECCA69DD0 /* Resources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FD1AA72C23ED9F830440932D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				20E07D43D823630A9403D511 /* OAuth.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AFACAAAC01AB27E17FECE54 /* MergefoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBD5B78C175B3494BCBA4DEA /* Build configuration list for PBXNativeTarget "MergefoxTests" */;
+			buildPhases = (
+				8F42C4FA4339426FD3EDC5F1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8CA5EB5DB5B826C394FE671 /* PBXTargetDependency */,
+			);
+			name = MergefoxTests;
+			packageProductDependencies = (
+			);
+			productName = MergefoxTests;
+			productReference = 10237C2331F0B70D67E3571F /* MergefoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		62932440D77919BEB1BD89A7 /* Mergefox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 104C33870E6A97F78A405D06 /* Build configuration list for PBXNativeTarget "Mergefox" */;
+			buildPhases = (
+				0C504274300F47D5ECF4BA9B /* Sources */,
+				8C9948C966E4D8C8B0F97D34 /* Resources */,
+				CC436078F8E763F2749A2B2C /* Frameworks */,
+				1A3C2E9335229AC9647CD8C8 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E9BDE09BA78D96491170576 /* PBXTargetDependency */,
+			);
+			name = Mergefox;
+			packageProductDependencies = (
+				4E39824D305FC8CF6352D5D7 /* gitdiff */,
+			);
+			productName = Mergefox;
+			productReference = 15CF4BA89FBA649261F3BD03 /* Mergefox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		779EAA3804A148B9535FC8A6 /* MergefoxShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6755EE8BB3E344A63AB27C80 /* Build configuration list for PBXNativeTarget "MergefoxShare" */;
+			buildPhases = (
+				D1E5F7B016D78F8D7804E55D /* Sources */,
+				D738569ED124801F5F7127BC /* Resources */,
+				76BBB046E6DCF53D68165980 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MergefoxShare;
+			packageProductDependencies = (
+				9986A014F688820D5F110D40 /* gitdiff */,
+			);
+			productName = MergefoxShare;
+			productReference = 6E12AB59CACCB355C120E0B9 /* MergefoxShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22573DC80B08735E23AB941D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5AFACAAAC01AB27E17FECE54 = {
+						DevelopmentTeam = 956T9YFK9F;
+						ProvisioningStyle = Automatic;
+					};
+					62932440D77919BEB1BD89A7 = {
+						DevelopmentTeam = 956T9YFK9F;
+						ProvisioningStyle = Automatic;
+					};
+					779EAA3804A148B9535FC8A6 = {
+						DevelopmentTeam = 956T9YFK9F;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7BD6F902EBCEAA829F7E63E4 /* Build configuration list for PBXProject "Mergefox" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 2589E324A6670B4140B4F244;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				211240AB5B7A580C21EF63C1 /* XCRemoteSwiftPackageReference "gitdiff" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5A70D9A32C46C383858810C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62932440D77919BEB1BD89A7 /* Mergefox */,
+				779EAA3804A148B9535FC8A6 /* MergefoxShare */,
+				5AFACAAAC01AB27E17FECE54 /* MergefoxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C9948C966E4D8C8B0F97D34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961A08FD6CDD619F83AA3B0A /* Assets.xcassets in Resources */,
+				3B6C15338001C92AD8F8CBCA /* ThirdPartyNotices.txt in Resources */,
+				28A39CE07953F09E41E368E6 /* dompurify.js in Resources */,
+				97DABC12E76B28E8ECE4BC6D /* marked.js in Resources */,
+				421884D6E058C566A569C4FD /* mermaid.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D738569ED124801F5F7127BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E83F9C913DFA54B982798BF /* ThirdPartyNotices.txt in Resources */,
+				51CB0EF745A52A36FE8722F9 /* dompurify.js in Resources */,
+				05EC7BB638C41316A9417CCE /* marked.js in Resources */,
+				0FD36B36D17D625852877E58 /* mermaid.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C504274300F47D5ECF4BA9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F37FCA2071F10B4A7FD6929B /* AppModel.swift in Sources */,
+				30C09EE3190A716E3887C363 /* Components.swift in Sources */,
+				7921122C02E3BB4C2A0137EA /* EdgeDiffView.swift in Sources */,
+				41BCE84619B649A2592256F4 /* GitLabAPI.swift in Sources */,
+				3724807542F6D40B51D9B031 /* HomePageControls.swift in Sources */,
+				EF208CFAD13F222CF39C6594 /* InboxFiltersView.swift in Sources */,
+				1F66FF463B8F98396CD7A79E /* Keychain.swift in Sources */,
+				8F89324A52D76ED5C95FEFFC /* MRInboxFilters.swift in Sources */,
+				25294A3A0BF8A8A6E77B1F47 /* MergefoxApp.swift in Sources */,
+				C691E27FFB016D903706773F /* Models.swift in Sources */,
+				9EAA86679BF04CECF72BE86B /* OAuth.swift in Sources */,
+				E775B78360B75B55FA2750AC /* PajamasTheme.swift in Sources */,
+				649086599E9FBF168C470246 /* RecentlyMergedFeed.swift in Sources */,
+				DCBC4E59BD0AA66D20866723 /* ReleaseDashboardModel.swift in Sources */,
+				C50A70D5386727D7C5A2D6DF /* ReleaseDashboardView.swift in Sources */,
+				F8C3813A6A8B5A4DA8821771 /* ReleaseMetrics.swift in Sources */,
+				B139BAC03DD4CAF671BF4437 /* RichMarkdown.swift in Sources */,
+				34A8BAB22F8D347C7C7F8C6E /* SharedMRLink.swift in Sources */,
+				D375CB4B7B8AFF5AF0FA2A0A /* Views.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F42C4FA4339426FD3EDC5F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D88B96AC9B491F1814B5CE5 /* MergefoxTests.swift in Sources */,
+				542EB88345A0B10F1FE65F2D /* ReleaseMetricsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E5F7B016D78F8D7804E55D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9C2621B827805B03D64DBA /* AppModel.swift in Sources */,
+				2403C8E743E4E4BBA28FCB6B /* Components.swift in Sources */,
+				72167A8C5FBE24766363A8A9 /* EdgeDiffView.swift in Sources */,
+				93BEEF6C7E38BF3C4BC279D8 /* GitLabAPI.swift in Sources */,
+				716C40B12BE377C87EA92821 /* HomePageControls.swift in Sources */,
+				88F652D24C19FC3744F133EF /* InboxFiltersView.swift in Sources */,
+				E8B6B3575B5DAB8BDDC871AE /* Keychain.swift in Sources */,
+				DF93A39DEAD960B1ACC6C1AA /* MRInboxFilters.swift in Sources */,
+				80A8C72EBC8F58EB9C17012B /* Models.swift in Sources */,
+				76D5700202BFFE0AD62C1F88 /* OAuth.swift in Sources */,
+				AEB2BFADA8721D665F99FA98 /* PajamasTheme.swift in Sources */,
+				1E94F57E2C86D65671F49953 /* RecentlyMergedFeed.swift in Sources */,
+				5CBED9F585437E0D14147496 /* ReleaseDashboardModel.swift in Sources */,
+				600E390C8488C8ED6EE93505 /* ReleaseDashboardView.swift in Sources */,
+				7B152E9B31FA88BA7213E7AC /* ReleaseMetrics.swift in Sources */,
+				A89EB1732CFF28BB71C2F87C /* RichMarkdown.swift in Sources */,
+				E12ED9D574A89E747CE0D257 /* ShareViewController.swift in Sources */,
+				D78A915F0316C134E1797F49 /* SharedMRLink.swift in Sources */,
+				42C8B37A75FD138308BFFB76 /* Views.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E9BDE09BA78D96491170576 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 779EAA3804A148B9535FC8A6 /* MergefoxShare */;
+			targetProxy = DD2A7F4BEB147E574C3716D9 /* PBXContainerItemProxy */;
+		};
+		E8CA5EB5DB5B826C394FE671 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62932440D77919BEB1BD89A7 /* Mergefox */;
+			targetProxy = DF48CC3B92FDD7E1C734E963 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0939039FD9191A90F43A8348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20E07D43D823630A9403D511 /* OAuth.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/Mergefox.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.perryraskin.mergepocket;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2CE10F3D17F7F60BBD2E6280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/MergefoxShare.entitlements;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.perryraskin.mergepocket.share;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SHARE_EXTENSION";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		34204AB7DE0514F1419DB8AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 202610120454;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 956T9YFK9F;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		379E275593021555ED457FA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20E07D43D823630A9403D511 /* OAuth.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/Mergefox.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.perryraskin.mergepocket;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9000208502940490A72E3CE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mergefox.app/Mergefox";
+			};
+			name = Release;
+		};
+		A8F20FF2272CFD89C5B2FD2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mergefox.app/Mergefox";
+			};
+			name = Debug;
+		};
+		B9E42BDCDD64F42B36D23304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/MergefoxShare.entitlements;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.perryraskin.mergepocket.share;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SHARE_EXTENSION";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAA78A1C3C83474EDAC55AC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 202610120454;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 956T9YFK9F;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		104C33870E6A97F78A405D06 /* Build configuration list for PBXNativeTarget "Mergefox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0939039FD9191A90F43A8348 /* Debug */,
+				379E275593021555ED457FA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6755EE8BB3E344A63AB27C80 /* Build configuration list for PBXNativeTarget "MergefoxShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9E42BDCDD64F42B36D23304 /* Debug */,
+				2CE10F3D17F7F60BBD2E6280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7BD6F902EBCEAA829F7E63E4 /* Build configuration list for PBXProject "Mergefox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34204AB7DE0514F1419DB8AF /* Debug */,
+				EAA78A1C3C83474EDAC55AC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DBD5B78C175B3494BCBA4DEA /* Build configuration list for PBXNativeTarget "MergefoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8F20FF2272CFD89C5B2FD2B /* Debug */,
+				9000208502940490A72E3CE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		211240AB5B7A580C21EF63C1 /* XCRemoteSwiftPackageReference "gitdiff" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tornikegomareli/gitdiff.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4E39824D305FC8CF6352D5D7 /* gitdiff */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 211240AB5B7A580C21EF63C1 /* XCRemoteSwiftPackageReference "gitdiff" */;
+			productName = gitdiff;
+		};
+		9986A014F688820D5F110D40 /* gitdiff */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 211240AB5B7A580C21EF63C1 /* XCRemoteSwiftPackageReference "gitdiff" */;
+			productName = gitdiff;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 22573DC80B08735E23AB941D /* Project object */;
+}

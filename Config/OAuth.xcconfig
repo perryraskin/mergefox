@@ -1,0 +1,3 @@
+// Local OAuth configuration is optional for public source builds.
+GITLAB_OAUTH_CLIENT_ID =
+#include? "OAuth.local.xcconfig"

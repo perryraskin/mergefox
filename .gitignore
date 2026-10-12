@@ -1,0 +1,16 @@
+.DS_Store
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.ipa
+*.mobileprovision
+*.p12
+
+# Local OAuth configuration and generated project metadata
+Config/*.local.xcconfig
+.env
+.env.*
+*.xcarchive
+Design/IconArchive/
+Design/IconHistory/
