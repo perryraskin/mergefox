@@ -13,6 +13,7 @@ Native SwiftUI code review for iPhone and iPad. Open GitLab merge requests, revi
 - Full-width native unified diffs with line numbers, collapsible files, and horizontally scrolling filenames/code.
 - MR metadata, reviewers, assignees, labels, branches, and pipeline status.
 - Discussion replies and resolve/reopen; approve the loaded commit or undo approval; edit title, description, labels, and target branch.
+- Native back navigation with a left-edge swipe; horizontal code and filename dragging remain available.
 - Read-only demo mode.
 
 ## Build and test

@@ -3,32 +3,39 @@ import SwiftUI
 struct RootView: View {
     @EnvironmentObject var model: AppModel
     @State private var settings = false
+    private var showingMR: Binding<Bool> {
+        Binding(get: { model.location != nil }, set: { presented in
+            if !presented && model.location != nil { model.closeMergeRequest() }
+        })
+    }
+    private var accountButton: some View {
+        Button { settings = true } label: { Image(systemName: "person.crop.circle").foregroundStyle(PajamasTheme.accent) }
+            .accessibilityLabel("Account settings")
+    }
     var body: some View {
         NavigationStack {
-            Group {
-                if model.location != nil { MRView() }
-                else { HomeView() }
-            }
-            .navigationTitle(model.location == nil ? "Mergefox" : "Merge request")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbarBackground(PajamasTheme.canvas, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
-            .toolbar {
-                if model.location == nil {
+            HomeView()
+                .navigationTitle("Mergefox")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbarBackground(PajamasTheme.canvas, for: .navigationBar)
+                .toolbarBackground(.visible, for: .navigationBar)
+                .toolbar {
                     ToolbarItem(placement: .principal) {
                         HStack(spacing: 8) {
                             Image(systemName: "arrow.triangle.pull").foregroundStyle(PajamasTheme.orange)
                             Text("Mergefox").font(.headline).foregroundStyle(PajamasTheme.text)
                         }
                     }
+                    ToolbarItem(placement: .topBarTrailing) { accountButton }
                 }
-                if model.location != nil {
-                    ToolbarItem(placement: .topBarLeading) {
-                        Button { model.location = nil; model.mr = nil; model.demo = false; Task { await model.loadHome() } } label: { Image(systemName: "tray").foregroundStyle(PajamasTheme.orange) }.accessibilityLabel("Merge request inbox")
-                    }
+                .navigationDestination(isPresented: showingMR) {
+                    MRView()
+                        .navigationTitle("Merge request")
+                        .navigationBarTitleDisplayMode(.inline)
+                        .toolbarBackground(PajamasTheme.canvas, for: .navigationBar)
+                        .toolbarBackground(.visible, for: .navigationBar)
+                        .toolbar { ToolbarItem(placement: .topBarTrailing) { accountButton } }
                 }
-                ToolbarItem(placement: .topBarTrailing) { Button { settings = true } label: { Image(systemName: "person.crop.circle").foregroundStyle(PajamasTheme.accent) }.accessibilityLabel("Account settings") }
-            }
         }
         .sheet(isPresented: $settings) { AccountView() }
         .sheet(isPresented: $model.showSignIn) { AccountView() }

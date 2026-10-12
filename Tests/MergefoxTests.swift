@@ -4,6 +4,26 @@ import SwiftUI
 @testable import Mergefox
 
 final class MergefoxTests: XCTestCase {
+    @MainActor func testBackNavigationClearsDetailWithoutChangingAccount() {
+        let model = AppModel()
+        model.loadDemo()
+        let credential = Credential(host: URL(string: "https://gitlab.com")!, accessToken: "test-only")
+        model.account = credential
+        model.loading = true
+        model.approvalWarning = "Temporary warning"
+        model.closeMergeRequest()
+        XCTAssertNil(model.location)
+        XCTAssertNil(model.mr)
+        XCTAssertTrue(model.diffs.isEmpty)
+        XCTAssertTrue(model.discussions.isEmpty)
+        XCTAssertNil(model.approval)
+        XCTAssertNil(model.approvalWarning)
+        XCTAssertFalse(model.loading)
+        XCTAssertFalse(model.demo)
+        XCTAssertEqual(model.account?.accessToken, credential.accessToken)
+        // No saved credentials or API credentials are changed by this test.
+        model.account = nil
+    }
     func testSharedMessageExtractsMRInsteadOfOtherLinks() {
         let text = "Docs https://example.com — please review https://gitlab.com/company/team/repo/-/merge_requests/37/diffs#note_12"
         XCTAssertEqual(SharedMRLink.extract(from: text)?.absoluteString, "https://gitlab.com/company/team/repo/-/merge_requests/37")

@@ -83,6 +83,7 @@ struct DiffCard: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     Text(file.newPath).font(.subheadline.monospaced().weight(.semibold))
                         .fixedSize(horizontal: true, vertical: false).textSelection(.enabled)
+                        .background(BackSwipePriority())
                 }.accessibilityHint("Swipe horizontally to read the full filename")
                 if file.newFile == true { Text("Added").font(.caption).foregroundStyle(PajamasTheme.success) }
                 if file.deletedFile == true { Text("Deleted").font(.caption).foregroundStyle(PajamasTheme.danger) }

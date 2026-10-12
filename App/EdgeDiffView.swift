@@ -37,7 +37,7 @@ struct EdgeDiffView: View {
                             ForEach(lines) { line in
                                 row(line, width: width)
                             }
-                        }.frame(width: width)
+                        }.frame(width: width).background(BackSwipePriority())
                     }
                     .accessibilityHint("Swipe horizontally to read long code lines")
                 }.frame(height: CGFloat(lines.count) * rowHeight)

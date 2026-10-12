@@ -154,6 +154,14 @@ import SwiftUI
             self.account = await api.currentCredential()
         } catch { if generation == loadGeneration, inboxRequest == inboxGeneration, !Task.isCancelled { self.error = error.localizedDescription } }
     }
+    func closeMergeRequest() {
+        // Invalidate in-flight MR responses so a completed back gesture cannot
+        // repopulate the detail after the native navigation stack returns Home.
+        loadGeneration = UUID()
+        location = nil; mr = nil; diffs = []; discussions = []; approval = nil
+        loading = false; demo = false; approvalWarning = nil; discussionWarning = nil
+        Task { await loadHome() }
+    }
     func open(_ input: String) async {
         do { let loc = try MRLocation.parse(input); await load(loc) }
         catch { self.error = error.localizedDescription }

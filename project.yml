@@ -9,7 +9,7 @@ settings:
     DEVELOPMENT_TEAM: 956T9YFK9F
     TARGETED_DEVICE_FAMILY: '1,2'
     MARKETING_VERSION: '0.1.14'
-    CURRENT_PROJECT_VERSION: 202610120454
+    CURRENT_PROJECT_VERSION: 202610120654
 packages:
   gitdiff:
     url: https://github.com/tornikegomareli/gitdiff.git

@@ -43,11 +43,13 @@
 		9D2ADB0A72CA2CD64FBEF0C1 /* gitdiff in Frameworks */ = {isa = PBXBuildFile; productRef = 9986A014F688820D5F110D40 /* gitdiff */; };
 		9E83F9C913DFA54B982798BF /* ThirdPartyNotices.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF3C7A61FBCDDDE412E32541 /* ThirdPartyNotices.txt */; };
 		9EAA86679BF04CECF72BE86B /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6479169BB92D2E4A197A7C08 /* OAuth.swift */; };
+		A647BE6C8147DFE9342C0D31 /* BackSwipePriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BB4292E89859AFA7BB3E81 /* BackSwipePriority.swift */; };
 		A89EB1732CFF28BB71C2F87C /* RichMarkdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CBE974D3E9637585AEA0F /* RichMarkdown.swift */; };
 		AEB2BFADA8721D665F99FA98 /* PajamasTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6752F81161DE08DA4674CA45 /* PajamasTheme.swift */; };
 		B139BAC03DD4CAF671BF4437 /* RichMarkdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CBE974D3E9637585AEA0F /* RichMarkdown.swift */; };
 		C50A70D5386727D7C5A2D6DF /* ReleaseDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DDD6B2B12B55B81D2469E3 /* ReleaseDashboardView.swift */; };
 		C691E27FFB016D903706773F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FF5ABAFC6CEC4E53E5CBFA /* Models.swift */; };
+		C97B0002FCBD04388101790E /* BackSwipePriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BB4292E89859AFA7BB3E81 /* BackSwipePriority.swift */; };
 		D375CB4B7B8AFF5AF0FA2A0A /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0D0446C46B7C192854149 /* Views.swift */; };
 		D78A915F0316C134E1797F49 /* SharedMRLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67D968A37239E43B6F80BC3 /* SharedMRLink.swift */; };
 		DCBC4E59BD0AA66D20866723 /* ReleaseDashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA4D0861DDF9B7FA6A90500 /* ReleaseDashboardModel.swift */; };
@@ -113,6 +115,7 @@
 		6AC8B5D4E53F451A8498049A /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		6E12AB59CACCB355C120E0B9 /* MergefoxShare.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = MergefoxShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7299C477F5E4757FDCEFB3C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72BB4292E89859AFA7BB3E81 /* BackSwipePriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackSwipePriority.swift; sourceTree = "<group>"; };
 		7EB0D0446C46B7C192854149 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		8798FA09C5AE00DF7B1037B5 /* InboxFiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxFiltersView.swift; sourceTree = "<group>"; };
 		888CBE974D3E9637585AEA0F /* RichMarkdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichMarkdown.swift; sourceTree = "<group>"; };
@@ -214,6 +217,7 @@
 			children = (
 				F7AFE719B199D40D06FA6245 /* AppModel.swift */,
 				7299C477F5E4757FDCEFB3C1 /* Assets.xcassets */,
+				72BB4292E89859AFA7BB3E81 /* BackSwipePriority.swift */,
 				6AC8B5D4E53F451A8498049A /* Components.swift */,
 				A5923AF5ED71B8CB2D941CF6 /* EdgeDiffView.swift */,
 				5BA92C577C297B7A675EEFB2 /* GitLabAPI.swift */,
@@ -389,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F37FCA2071F10B4A7FD6929B /* AppModel.swift in Sources */,
+				C97B0002FCBD04388101790E /* BackSwipePriority.swift in Sources */,
 				30C09EE3190A716E3887C363 /* Components.swift in Sources */,
 				7921122C02E3BB4C2A0137EA /* EdgeDiffView.swift in Sources */,
 				41BCE84619B649A2592256F4 /* GitLabAPI.swift in Sources */,
@@ -424,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9C2621B827805B03D64DBA /* AppModel.swift in Sources */,
+				A647BE6C8147DFE9342C0D31 /* BackSwipePriority.swift in Sources */,
 				2403C8E743E4E4BBA28FCB6B /* Components.swift in Sources */,
 				72167A8C5FBE24766363A8A9 /* EdgeDiffView.swift in Sources */,
 				93BEEF6C7E38BF3C4BC279D8 /* GitLabAPI.swift in Sources */,
@@ -533,7 +539,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 202610120454;
+				CURRENT_PROJECT_VERSION = 202610120654;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 956T9YFK9F;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -670,7 +676,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 202610120454;
+				CURRENT_PROJECT_VERSION = 202610120654;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 956T9YFK9F;
 				ENABLE_NS_ASSERTIONS = NO;
